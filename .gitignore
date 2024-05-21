@@ -1,0 +1,34 @@
+# Ignorar carpetas específicas
+node_modules/
+dist/
+out/
+tmp/
+coverage/
+resources/components/
+
+# Ignorar archivos de configuración del entorno
+.env
+.env.local
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de compilación
+*.o
+*.so
+*.dylib
+*.dll
+
+# Ignorar archivos de dependencia específicos
+package-lock.json
+yarn.lock
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
