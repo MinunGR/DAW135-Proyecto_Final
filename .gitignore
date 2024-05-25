@@ -4,6 +4,7 @@ out/
 tmp/
 coverage/
 dist/
+.parcel-cache/
 
 # Ignorar archivos de configuración del entorno
 .env
