@@ -1,0 +1,32 @@
+{
+  "name": "agencia-marketing-influencers",
+  "version": "1.0.0",
+  "description": "Agencia de marketing de influencers",
+  "main": "./src/scripts/index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinunGR/DAW135-Proyecto_Final.git"
+  },
+  "keywords": [
+    "pagina",
+    "web",
+    "estatica"
+  ],
+  "author": "alumnos_ues_ids",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinunGR/DAW135-Proyecto_Final/issues"
+  },
+  "homepage": "https://github.com/MinunGR/DAW135-Proyecto_Final#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "swiper": "^11.1.3"
+  }
+}
