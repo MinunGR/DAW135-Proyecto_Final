@@ -2,14 +2,11 @@
   "name": "agencia-marketing-influencers",
   "version": "1.0.0",
   "description": "Agencia de marketing de influencers",
-  "main": "./src/scripts/index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MinunGR/DAW135-Proyecto_Final.git"
+    "build": "parcel build src/index.html --public-url ./",
+    "nbuild1": "npx parcel src/index.html",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "keywords": [
     "pagina",
