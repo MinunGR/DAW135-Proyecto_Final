@@ -3,6 +3,7 @@ node_modules/
 out/
 tmp/
 coverage/
+dist/
 
 # Ignorar archivos de configuración del entorno
 .env
