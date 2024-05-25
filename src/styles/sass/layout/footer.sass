@@ -1,0 +1,130 @@
+
+footer
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: #cccccc
+
+.footer
+    bottom: 0
+    width: 100%
+    background: #111
+
+.main_content
+    display: flex
+
+    .box
+        flex-basis: 50%
+        padding: 10px 20px
+
+        strong
+            font-size: 1.25rem
+            font-weight: 600
+            text-transform: uppercase
+
+        .main_content
+            margin: 20px 0 0 0
+            position: relative
+
+            &:before
+                position: absolute
+                content: ""
+                top: -10px
+                height: 2px
+                width: 100%
+                background: #1a1a1a
+
+            &:after
+                position: absolute
+                content: ""
+                height: 2px
+                width: 15%
+                background: #2027f1
+                top: -10px
+
+.left .main_content .social
+    margin: 20px 0 0 0
+
+    a
+        padding: 0 2px
+
+        span
+            height: 40px
+            width: 40px
+            background: #1a1a1a
+            line-height: 40px
+            text-align: center
+            font-size: 18px
+            border-radius: 5px
+            transition: 0.3s ease
+
+    .left .main_content .social a span:hover
+        background: rgb(34, 22, 161)
+        color: white
+
+.center .main_content .fas, .right .main_content .fab, .right .main_content .fas
+    font-size: 1.4375rem
+    background: #1a1a1a
+    height: 45px
+    width: 45px
+    line-height: 45px
+    text-align: center
+    border-radius: 50%
+    transition: 0.3s ease
+    cursor: pointer
+
+
+.center .main_content .fas:hover, .right .main_content .fab:hover, .right .main_content .fas:hover
+    background: rgb(34, 22, 161)
+
+.center .main_content .text, .right .main_content .text
+    font-size: 1.04rem
+    font-weight: 500
+    padding-left: 10px
+
+.center .main_content .email, .right .main_content .whatsapp
+    margin: 10px 0
+
+.bottom_info p
+    padding: 5px
+    font-size: 0.9375rem
+    background: #151515
+
+    span
+        color: #656565
+
+    a
+        color: #f12020
+        text-decoration: none
+
+        &:hover
+            text-decoration: underline
+
+.center a
+    color: #cccccc
+    transition: 0.3s ease
+    text-decoration: none
+
+    &:hover
+        color: blue
+        text-decoration: underline
+
+.right a
+    color: #cccccc
+    transition: 0.3s ease
+    text-decoration: none
+
+    &:hover
+        color: blue
+        text-decoration: underline
+
+@media screen and (max-width: 900px)
+    footer
+        position: relative
+        bottom: 0
+    .main_content
+        flex-wrap: wrap
+        flex-direction: column
+
+        .box
+            margin: 5px 0

@@ -4,7 +4,7 @@ dist/
 out/
 tmp/
 coverage/
-resources/components/
+src/components/
 
 # Ignorar archivos de configuración del entorno
 .env
