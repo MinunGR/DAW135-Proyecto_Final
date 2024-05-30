@@ -1,10 +1,9 @@
 # Ignorar carpetas específicas
 node_modules/
-dist/
 out/
 tmp/
 coverage/
-resources/components/
+.parcel-cache/
 
 # Ignorar archivos de configuración del entorno
 .env
