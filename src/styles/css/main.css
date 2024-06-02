@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css");
-@import url("https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css");
 @import url("https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css");
 @import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 *,
@@ -17,14 +16,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.container {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   overflow: scroll;
   font-family: "Montserrat", sans-serif;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background: -webkit-linear-gradient(to right, rgb(56, 2, 117), black);
   background: -moz-linear-gradient(to right, rgb(56, 2, 117), black);
   background: -o-linear-gradient(to right, rgb(56, 2, 117), black);
@@ -37,12 +35,14 @@ body {
 }
 
 .swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 100%;
 }
 
 .swiper-slide {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,10 +50,10 @@ body {
   font-size: 1.5em;
   color: #fff;
   text-align: center;
-  padding: 20px;
 }
 
 .slide-overlay {
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,9 +63,11 @@ body {
 }
 
 .slide-image {
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -95,22 +97,6 @@ body {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .swiper-container .swiper-slide img {
-    height: 370px;
-  }
-}
-@media (min-width: 1200px) {
-  .swiper-container .swiper-slide img {
-    height: 420px;
-  }
-  .swiper-container .carousel-controls {
-    padding: 0 50px;
-  }
-  .swiper-button-prev .swiper-button-next .swiper-pagination {
-    display: none;
-  }
-}
 .social_block {
   margin: 20px 0px;
   display: flex;
@@ -180,8 +166,8 @@ p {
 }
 
 #sec_inicio {
-  margin-top: 100px;
-  height: auto;
+  height: 500px;
+  overflow: hidden;
 }
 
 nav {

@@ -1,9 +1,11 @@
 .swiper-container
+    display: flex
+    justify-content: center
+    align-items: center
     width: 100%
-    height: 60vh
+    height: 100%
 
 .swiper-slide
-    position: relative
     display: flex
     justify-content: center
     align-items: center
@@ -11,9 +13,9 @@
     font-size: 1.5em
     color: #fff
     text-align: center
-    padding: 20px
 
 .slide-overlay
+    height: 100%
     position: absolute
     top: 0
     left: 0
@@ -21,16 +23,16 @@
     height: 100%
     background: rgba(0, 0, 0, 0.5)
 
-
 .slide-image
+    background-size: cover
+    background-position: center
+    object-fit: contain
     width: 100%
-    height: 100%
-    object-fit: cover
+    height: auto
     position: absolute
     top: 0
     left: 0
     z-index: -1
-
 
 .slide-content
     position: relative
@@ -38,36 +40,15 @@
     opacity: 0
     transition: opacity 1s ease-in-out
 
-
 .slide-title
     font-size: 2em
     font-weight: bold
     margin-bottom: 10px
 
-
 .slide-description
     font-size: 1em
-
 
 /* Mostrar la descripción solo en la diapositiva activa */
 .swiper-slide-active .slide-content
     display: block
     opacity: 1
-
-@media (min-width: 768px)
-    .swiper-container .swiper-slide img
-        height: 370px
-
-
-@media (min-width: 1200px)
-    .swiper-container .swiper-slide img
-        height: 420px
-
-
-    .swiper-container .carousel-controls
-        padding: 0 50px
-
-    .swiper-button-prev .swiper-button-next .swiper-pagination
-        display: none
-
-
