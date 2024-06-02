@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css");
+@import url("https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css");
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+  font-family: "Montserrat", sans-serif;
+  background: -webkit-linear-gradient(to right, rgb(56, 2, 117), black);
+  background: -moz-linear-gradient(to right, rgb(56, 2, 117), black);
+  background: -o-linear-gradient(to right, rgb(56, 2, 117), black);
+  background: linear-gradient(to right, rgb(56, 2, 117), black);
+  background-size: cover;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+}
+
+.slide-overlay {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-image {
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slide-description {
+  font-size: 1em;
+}
+
+/* Mostrar la descripción solo en la diapositiva activa */
+.swiper-slide-active .slide-content {
+  display: block;
+  opacity: 1;
+}
+
+.social_block {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social_block__icon {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+}
+
+container_about {
+  width: 200px;
+}
+
+.parallax {
+  background-image: url("https://369237.fs1.hubspotusercontent-na1.net/hubfs/369237/How-to-find-influencers-on-TikTok-for-your-marketing-campaign-1920x1080.jpg");
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.content__square {
+  width: 300px;
+  border-radius: 25px;
+  padding: 20px;
+  background: white;
+  height: 350px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+.content__square__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+#sec_inicio {
+  height: 500px;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  height: 100px;
+  background-color: rgba(47, 4, 148, 0.9);
+}
+nav .company_name {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav_toggle_btn {
+  position: absolute;
+  top: -100px;
+}
+
+@media screen and (max-width: 1140px) {
+  nav .company_name {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .links a {
+    font-size: 20px;
+  }
+  nav .icon-burger {
+    display: block;
+    cursor: pointer;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #cccccc;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background: #111;
+}
+
+.main_content {
+  display: flex;
+}
+.main_content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.main_content .box strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main_content .box .main_content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.main_content .box .main_content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.main_content .box .main_content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #2027f1;
+  top: -10px;
+}
+
+.left .main_content .social {
+  margin: 20px 0 0 0;
+}
+.left .main_content .social a {
+  padding: 0 2px;
+}
+.left .main_content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.left .main_content .social .left .main_content .social a span:hover {
+  background: rgb(34, 22, 161);
+  color: white;
+}
+
+.center .main_content .fas, .right .main_content .fab, .right .main_content .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.center .main_content .fas:hover, .right .main_content .fab:hover, .right .main_content .fas:hover {
+  background: rgb(34, 22, 161);
+}
+
+.center .main_content .text, .right .main_content .text {
+  font-size: 1.04rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .main_content .email, .right .main_content .whatsapp {
+  margin: 10px 0;
+}
+
+.bottom_info p {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom_info p span {
+  color: #656565;
+}
+.bottom_info p a {
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom_info p a:hover {
+  text-decoration: underline;
+}
+
+.center a {
+  color: #cccccc;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.center a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.right a {
+  color: #cccccc;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.right a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+  .main_content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main_content .box {
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

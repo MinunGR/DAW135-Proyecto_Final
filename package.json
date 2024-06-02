@@ -1,29 +1,30 @@
 {
-  "name": "agencia-marketing-influencers",
-  "version": "1.0.0",
-  "description": "Agencia de marketing de influencers",
-  "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
-    "nbuild1": "npx parcel src/index.html",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
-  },
-  "keywords": [
-    "pagina",
-    "web",
-    "estatica"
-  ],
-  "author": "alumnos_ues_ids",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MinunGR/DAW135-Proyecto_Final/issues"
-  },
-  "homepage": "https://github.com/MinunGR/DAW135-Proyecto_Final#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
-  },
-  "dependencies": {
-    "swiper": "^11.1.3"
-  }
+	"name": "agencia-marketing-influencers",
+	"version": "1.0.0",
+	"description": "Agencia de marketing de influencers",
+	"scripts": {
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html --public-url ./",
+		"nbuild1": "npx parcel src/index.html",
+		"css": "sass ./src/styles/sass/main.sass ./src/styles/css/main.css",
+		"push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+	},
+	"keywords": [
+		"pagina",
+		"web",
+		"estatica"
+	],
+	"author": "alumnos_ues_ids",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MinunGR/DAW135-Proyecto_Final/issues"
+	},
+	"homepage": "https://github.com/MinunGR/DAW135-Proyecto_Final#readme",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.12.0",
+		"parcel": "^2.12.0"
+	},
+	"dependencies": {
+		"swiper": "^11.1.3"
+	}
 }
