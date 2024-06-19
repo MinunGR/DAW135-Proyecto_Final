@@ -1,0 +1,47 @@
+#sec_equipo
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+    justify-content: center
+    padding: 40px
+    text-align: center
+    color: #fff
+    background-color: rgba(0, 0, 0, 0.2)
+
+.team-member
+    flex: 1 1 300px
+    margin: 20px
+    text-align: center
+    padding: 50px
+    color: #111
+    font-weight: bold
+    border-radius: 10px
+    background-color: #eee
+
+    & img
+        width: 150px
+        height: 150px
+        border-radius: 50%
+        object-fit: cover
+
+    & h2
+        margin-top: 10px
+        font-size: 1.5rem
+
+    & p
+        margin-top: 10px
+        font-size: 1rem
+
+@media (max-width: 768px)
+    .header-content h1
+        font-size: 2rem
+
+    .team-member img
+        width: 120px
+        height: 120px
+
+    .team-member h2
+        font-size: 1.25rem
+
+    .team-member p
+        font-size: 0.9rem

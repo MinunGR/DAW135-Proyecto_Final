@@ -1,204 +1,296 @@
 <!DOCTYPE html>
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport"
+		/>
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<base href="." />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/styles/css/main.css" type="text/css" />
+		<title>Name | Agencia de Marketing de Influencers</title>
+		<!--Icono de la compañia-->
+		<!--    <link rel="icon" href="src/img/icon.png" type="image/png" alt="NaI" />-->
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-		name="viewport" />
-	<meta content="ie=edge" http-equiv="X-UA-Compatible" />
-	<base href="." />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="src/styles/sass/main.css" type="text/css" />
-	<title>Name | Agencia de Marketing de Influencers</title>
-	<!--Icono de la compañia-->
-	<!--    <link rel="icon" href="src/img/icon.png" type="image/png" alt="NaI" />-->
-</head>
+	<body>
+		<!-- <header> -->
 
-<body>
-	<!-- <header> -->
+		<!-- </header> -->
+		<nav>
+			<input id="nav_toggle_btn" name="foo" type="checkbox" />
+			<div class="company_name bold">NAME</div>
+			<ul class="links">
+				<li><a href="#home" id="inicio">Inicio</a></li>
+				<li><a href="#about" id="nosotros">Nosotros</a></li>
+				<li><a href="#customers" id="clientes">Experiencias</a></li>
+				<li><a href="#team" id="equipo">Equipo</a></li>
+				<li><a href="#contacts" id="contactos">Contactanos</a></li>
+			</ul>
+			<label class="icon-burger" for="nav_toggle_btn">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</label>
+		</nav>
+		<!-- <aside> -->
 
-	<!-- </header> -->
-	<nav>
-		<input id="nav_toggle_btn" name="foo" type="checkbox" />
-		<div class="company_name bold">NAME</div>
-		<ul class="links">
-			<li><a href="#home" id="inicio">Inicio</a></li>
-			<li><a href="#about" id="nosotros">Nosotros</a></li>
-			<li><a href="#customers" id="clientes">Experiencias</a></li>
-			<li><a href="#team" id="equipo">Equipo</a></li>
-			<li><a href="#contacts" id="contactos">Contactanos</a></li>
-		</ul>
-		<label class="icon-burger" for="nav_toggle_btn">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</label>
-	</nav>
-	<!-- <aside> -->
-
-	<!-- </aside> -->
-	<main class="main_container">
-		<section class="general_section" id="sec_inicio">
-			<!-- Slider: Código ingresado usando Javascript -->
-		</section>
-		<section class="general_section" id="sec_nosotros">
-			<div class="container_about">
+		<!-- </aside> -->
+		<main class="main_container">
+			<section class="general_section" id="sec_inicio">
+				<!-- Slider: Código ingresado usando Javascript -->
+			</section>
+			<section class="general_section" id="sec_nosotros">
+				<div class="container_about">
+					<div class="parallax"></div>
+					<div class="content">
+						<div class="content__square">
+							<div class="content__square__title">Mision</div>
+							<p>
+								Ser la agencia líder mundial en la gestión y
+								desarrollo de influencers, impulsando la
+								autenticidad, la creatividad y la conexión
+								genuina entre las marcas y sus audiencias a
+								través de contenido inspirador y de alto
+								impacto.
+							</p>
+						</div>
+						<div class="content__square">
+							<div class="content__square__title">Vision</div>
+							<p>
+								Nuestra misión es empoderar a los influencers
+								para que maximicen su potencial y alcancen el
+								éxito, proporcionando estrategias innovadoras,
+								recursos de primer nivel y apoyo integral.
+							</p>
+						</div>
+						<div class="content__square">
+							<div class="content__square__title">Objetivo</div>
+							<p>
+								Fortalecer la presencia digital de nuestros
+								influencers y marcas asociadas, logrando un
+								aumento del 25% en el engagement y el alcance en
+								redes sociales
+							</p>
+						</div>
+					</div>
+				</div>
 				<div class="parallax"></div>
-				<div class="content">
-					<div class="content__square">
-						<div class="content__square__title">Mision</div>
-						<p>
-							Ser la agencia líder mundial en la gestión y
-							desarrollo de influencers, impulsando la
-							autenticidad, la creatividad y la conexión
-							genuina entre las marcas y sus audiencias a
-							través de contenido inspirador y de alto
-							impacto.
-						</p>
+			</section>
+			<section class="general_section" id="sec_clientes"></section>
+			<section class="general_section" id="sec_equipo">
+				<div class="header-content">
+					<h1>Nuestro increíble equipo</h1>
+					<p>
+						Estamos dedicados a proporcionar soluciones innovadoras
+						y de alta calidad, impulsadas por la pasión y el
+						compromiso de cada uno de nuestros miembros. Juntos,
+						transformamos ideas en realidades.
+					</p>
+				</div>
+				<div class="team-member">
+					<img src="src/assets/images/team-1.jpg" alt="Adam Jonson" />
+					<h2>Adam Jonson</h2>
+					<p>Desarrollador</p>
+					<p>
+						Adam es un desarrollador experimentado con más de 5 años
+						de experiencia en la creación de aplicaciones web y
+						móviles. Es experto en tecnologías como JavaScript,
+						React y Node.js, y siempre está buscando formas
+						innovadoras de resolver problemas técnicos.
+					</p>
+				</div>
+				<div class="team-member">
+					<img
+						src="src/assets/images/team-2.jpg"
+						alt="Linda Larson"
+					/>
+					<h2>Robert Martínez</h2>
+					<p>Diseñador</p>
+					<p>
+						Robert es un diseñador creativo con un ojo excepcional
+						para el detalle. Tiene experiencia en diseño gráfico,
+						UI/UX, y branding. Su capacidad para transformar ideas
+						en diseños visualmente atractivos ha sido fundamental
+						para nuestro éxito.
+					</p>
+				</div>
+				<div class="team-member">
+					<img
+						src="src/assets/images/team-3.jpg"
+						alt="Linda Larson"
+					/>
+					<h2>Linda Larson</h2>
+					<p>Gerente</p>
+					<p>
+						Linda es una gerente dedicada con un enfoque en la
+						optimización de procesos y la mejora continua. Con una
+						sólida formación en administración de empresas, lidera a
+						nuestro equipo con visión estratégica y una gran
+						capacidad de organización.
+					</p>
+				</div>
+			</section>
+			<section class="general_section" id="sec_contactos"></section>
+		</main>
+
+		<footer
+			class="footer has-text-white has-background-black"
+			id="custom_footer"
+		>
+			<div class="columns is-desktop">
+				<div
+					class="column is-two-fifths has-text-justified"
+					id="left_side_footer"
+				>
+					<p class="uppercase is-size-5">
+						COMPANY NAME, S.A. DE C.V.
+					</p>
+					<div class="column_content">
+						<div>
+							<span>
+								<strong class="has-text-light is-size-6">
+									Nombre de la compania pero largo así bien
+									formal como pide nuestra señora ley, S.A de
+									C.V.
+								</strong>
+							</span>
+						</div>
 					</div>
-					<div class="content__square">
-						<div class="content__square__title">Vision</div>
-						<p>
-							Nuestra misión es empoderar a los influencers
-							para que maximicen su potencial y alcancen el
-							éxito, proporcionando estrategias innovadoras,
-							recursos de primer nivel y apoyo integral.
-						</p>
+				</div>
+				<div class="column has-text-justified" id="center_side_footer">
+					<p class="uppercase is-size-5">Más información</p>
+					<div class="column_content">
+						<div class="place">
+							<span class="fas fa-map-marker-alt"></span>
+							<span>
+								<strong class="has-text-light is-size-6">
+									San Salvador, San Salvador</strong
+								>
+							</span>
+						</div>
+						<div class="email">
+							<span class="fas fa-envelope"></span>
+							<span class="text">
+								<a
+									href="mailto:info@info.com.sv"
+									class="has-text-link-light"
+								>
+									info@info.com.sv</a
+								>
+							</span>
+						</div>
+						<div class="web">
+							<span class="fas fa-globe"></span>
+							<span class="text"
+								><a href="#" class="has-text-link-light">
+									www.info.com.sv</a
+								></span
+							>
+						</div>
+						<div class="phone">
+							<span class="fas fa-phone-alt"></span>
+							<span class="text">
+								<a
+									href="tel:+50325555555"
+									class="has-text-link-light"
+									>+503 2555-5555</a
+								></span
+							>
+						</div>
+						<div class="whatsapp">
+							<span class="fab fa-whatsapp"></span>
+							<span class="text">
+								<a
+									href="https://api.whatsapp.com/send?phone=50375571348"
+									class="has-text-link-light"
+									>+503 7557-1348</a
+								>
+							</span>
+						</div>
 					</div>
-					<div class="content__square">
-						<div class="content__square__title">Objetivo</div>
-						<p>
-							Fortalecer la presencia digital de nuestros
-							influencers y marcas asociadas, logrando un
-							aumento del 25% en el engagement y el alcance en
-							redes sociales
-						</p>
+				</div>
+				<div class="column has-text-justified" id="right_side_footer">
+					<p class="uppercase is-size-5">
+						Universidad de El Salvador
+					</p>
+
+					<div class="column_content">
+						<div class="is-align-content-center">
+							<figure
+								class="image"
+								style="width: 64px; margin: auto"
+							>
+								<img src="resources/img/logo_ues/ues.png" />
+							</figure>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="parallax"></div>
+			<div class="colums is-desktop">
+				<div class="social_block">
+					<a href="#" target="_blank" class="has-text-link-light">
+						<div class="social_block__icon">
+							<i class="fa-brands fa-facebook"></i>
+						</div>
+					</a>
+					<a href="#" class="has-text-link-light">
+						<div class="social_block__icon">
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+					</a>
+					<a href="#" class="has-text-link-light">
+						<div class="social_block__icon">
+							<i class="fa-brands fa-instagram"></i>
+						</div>
+					</a>
+					<a href="#" class="has-text-link-light">
+						<div class="social_block__icon">
+							<i class="fa-brands fa-whatsapp"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<section class="hero is-small is-primary">
+			<div class="hero-body">
+				<p class="title">
+					Grupo: Marketing para influencers.
+					<a
+						class="has-text-link-dark"
+						href="https://github.com/MinunGR/DAW135-Proyecto_Final"
+						target="_blank"
+						>Github</a
+					>
+				</p>
+				<p class="subtitle">
+					<span class="far fa-copyright"></span>
+					<span>2024 All rights reserved.</span>
+				</p>
+			</div>
+			<div class="container">
+				<p>
+					<a href="https://www.render.com" target="_blank">
+						<!--                    <img src="" alt="Host by: Render.com">-->
+					</a>
+				</p>
+			</div>
 		</section>
-		<section class="general_section" id="sec_clientes"></section>
-		<section class="general_section" id="sec_equipo"></section>
-		<section class="general_section" id="sec_contactos"></section>
-	</main>
 
-	<footer class="footer has-text-white has-background-black" id="custom_footer">
-		<div class="columns is-desktop">
-			<div class="column is-two-fifths has-text-justified" id="left_side_footer">
-				<p class="uppercase is-size-5">COMPANY NAME, S.A. DE C.V.</p>
-				<div class="column_content"> 
-					<div>
-						<span>
-							<strong class="has-text-light is-size-6	">
-								Nombre de la compania pero largo así bien formal como pide nuestra señora ley, S.A de
-								C.V.
-							</strong>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="column has-text-justified" id="center_side_footer">
-				<p class="uppercase is-size-5">Más información</p>
-				<div class="column_content">
-					<div class="place">
-						<span class="fas fa-map-marker-alt"></span>
-						<span>
-							<strong class="has-text-light is-size-6	"> San Salvador, San Salvador</strong>
-						</span>
-					</div>
-					<div class="email">
-						<span class="fas fa-envelope"></span>
-						<span class="text">
-							<a href="mailto:info@info.com.sv" class="has-text-link-light"> info@info.com.sv</a>
-						</span>
-					</div>
-					<div class="web">
-						<span class="fas fa-globe"></span>
-						<span class="text"><a href="#" class="has-text-link-light"> www.info.com.sv</a></span>
-					</div>
-					<div class="phone">
-						<span class="fas fa-phone-alt"></span>
-						<span class="text">
-							<a href="tel:+50325555555" class="has-text-link-light">+503
-								2555-5555</a></span>
-					</div>
-					<div class="whatsapp">
-						<span class="fab fa-whatsapp"></span>
-						<span class="text">
-							<a href="https://api.whatsapp.com/send?phone=50375571348" class="has-text-link-light">+503
-								7557-1348</a>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="column has-text-justified" id="right_side_footer">
-				<p class="uppercase is-size-5">Universidad de El Salvador</p>
-
-				<div class="column_content">
-					<div class="is-align-content-center">
-						<figure class="image " style="width: 64px; margin: auto;">
-							<img src="resources/img/logo_ues/ues.png" />
-						</figure>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="colums is-desktop">
-			<div class="social_block">
-				<a href="#" target="_blank" class="has-text-link-light">
-					<div class="social_block__icon">
-						<i class="fa-brands fa-facebook"></i>
-					</div>
-				</a>
-				<a href="#" class="has-text-link-light">
-					<div class="social_block__icon">
-						<i class="fa-regular fa-envelope"></i>
-					</div>
-				</a>
-				<a href="#" class="has-text-link-light">
-					<div class="social_block__icon">
-						<i class="fa-brands fa-instagram"></i>
-					</div>
-				</a>
-				<a href="#" class="has-text-link-light">
-					<div class="social_block__icon">
-						<i class="fa-brands fa-whatsapp"></i>
-					</div>
-				</a>
-			</div>
-		</div>
-
-	</footer>
-	<section class="hero is-small is-primary">
-		<div class="hero-body">
-			<p class="title">
-				Grupo: Marketing para influencers.
-				<a class="has-text-link-dark" href="https://github.com/MinunGR/DAW135-Proyecto_Final" target="_blank">Github</a>
-			</p>
-			<p class="subtitle">
-				<span class="far fa-copyright"></span>
-				<span>2024 All rights reserved.</span>
-			</p>
-
-		</div>
-		<div class="container">
-			<p>
-				<a href="https://www.render.com" target="_blank">
-					<!--                    <img src="" alt="Host by: Render.com">-->
-				</a>
-			</p>
-		</div>
-	</section>
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-	<script src="https://kit.fontawesome.com/c726452791.js" crossorigin="anonymous"></script>
-	<script type="module" src="src/scripts/index.js"></script>
-</body>
-
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/c726452791.js"
+			crossorigin="anonymous"
+		></script>
+		<script type="module" src="src/scripts/index.js"></script>
+	</body>
 </html>
