@@ -1,0 +1,64 @@
+$custom__card__primary__color: #dcd6f7
+$custom__card__primary__color__dark: #a8a8a8
+$text__dark: #333333
+$white: #ffff
+$black: #000
+
+#sec_clientes
+    color: white
+    display: flex
+    min-height: 100vh
+    .customers_container
+        max-width: 1200px
+        margin: auto
+        padding: 1rem
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        gap: 10rem
+
+.customer_container_left
+    .card_left_h1
+        margin-bottom: 2rem
+        font-size: 2.5rem
+        font-weight: 500
+        color: $custom__card__primary__color
+    .card_left_p
+        color: $white
+        margin-bottom: 1rem
+
+.customer_container_right
+    display: grid
+    gap: 2rem
+
+.custom_card
+    height: 100%
+    padding: 2rem
+    display: flex
+    align-items: flex-start
+    gap: 2rem
+    background-color: $white
+    border-radius: 1rem
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    img
+        max-width: 75px
+        border-radius: 100%
+
+.custom__card__content
+    display: flex
+    gap: 1rem
+    span
+        i
+            font-size: 2rem
+            color: $custom__card__primary__color
+
+.custom__card__details
+    .card_details_p
+        font-style: italic
+        color: $text__dark
+        margin-bottom: 1rem
+    .card_details_h4
+        text-align: right
+        color: $custom__card__primary__color
+        font-size: 1rem
+        font-weight: 500
