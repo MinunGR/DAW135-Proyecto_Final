@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+}
+
 .main_container {
   margin-top: 100px;
   display: flex;
@@ -130,7 +134,6 @@ html {
   padding: 40px;
   text-align: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .team-member {
@@ -173,14 +176,6 @@ html {
     font-size: 0.9rem;
   }
 }
-body {
-  width: 100%;
-}
-
-container_about {
-  width: 200px;
-}
-
 .parallax {
   background-image: url("https://369237.fs1.hubspotusercontent-na1.net/hubfs/369237/How-to-find-influencers-on-TikTok-for-your-marketing-campaign-1920x1080.jpg");
   height: 30vh;
@@ -213,12 +208,12 @@ container_about {
   font-size: 18px;
 }
 
-h1 {
+#sec_nosotros h1 {
   font-size: 3em;
   margin: 0.5em 0;
 }
 
-p {
+#sec_nosotros p {
   font-size: 1.5em;
   line-height: 1.5;
 }
@@ -338,6 +333,18 @@ nav .icon-burger .line {
     opacity: 0;
   }
 }
+.curved {
+  color: #fff;
+  text-align: left;
+}
+.curved svg {
+  display: block;
+  top: 7px;
+}
+.curved .upper {
+  background: #fff;
+}
+
 #custom_footer {
   padding-bottom: 1rem;
 }
