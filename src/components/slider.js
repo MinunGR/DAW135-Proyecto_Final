@@ -89,24 +89,24 @@ export function initializeSwiper(slidesData) {
 		img.classList.add("slide-image");
 		swiperSlide.appendChild(img);
 
-		const slideOverlay = document.createElement("div");
-		slideOverlay.classList.add("slide-overlay");
-		swiperSlide.appendChild(slideOverlay);
-
 		const slideContent = document.createElement("div");
 		slideContent.classList.add("slide-content");
-		swiperSlide.appendChild(slideContent);
+
+		const slideContentWrapper = document.createElement("div");
+		slideContentWrapper.classList.add("slide-content-wrapper");
+		slideContent.appendChild(slideContentWrapper);
 
 		const slideTitle = document.createElement("div");
 		slideTitle.classList.add("slide-title");
 		slideTitle.textContent = data.title;
-		slideContent.appendChild(slideTitle);
+		slideContentWrapper.appendChild(slideTitle);
 
 		const slideDescription = document.createElement("div");
 		slideDescription.classList.add("slide-description");
 		slideDescription.textContent = data.description;
-		slideContent.appendChild(slideDescription);
+		slideContentWrapper.appendChild(slideDescription);
 
+		swiperSlide.appendChild(slideContent);
 		swiperWrapper.appendChild(swiperSlide);
 	});
 
@@ -127,12 +127,12 @@ export function initializeSwiper(slidesData) {
 
 	return new Swiper(".swiper-container", {
 		loop: true,
-		slidesPerView: 1.5,
+		slidesPerView: 1,
 		centeredSlides: true,
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
