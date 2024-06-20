@@ -176,6 +176,74 @@ body {
     font-size: 0.9rem;
   }
 }
+#sec_clientes {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.customers_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  gap: 10rem;
+}
+
+.customer_container_left .card_left_h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #dcd6f7;
+}
+.customer_container_left .card_left_p {
+  color: white;
+  margin-bottom: 1rem;
+}
+.customer_container_left strong {
+  color: #a8a8a8;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.customer_container_right {
+  display: grid;
+  gap: 2rem;
+}
+
+.custom_card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #161032;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.custom_card img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+.custom__card__content {
+  display: flex;
+  gap: 1rem;
+}
+.custom__card__content span i {
+  font-size: 2rem;
+  color: white;
+}
+
+.custom__card__details .card_details_p {
+  font-style: italic;
+  color: white;
+  margin-bottom: 1rem;
+}
+.custom__card__details .card_details_h4 {
+  text-align: right;
+  color: #cdd3ce;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .parallax {
   background-image: url("https://369237.fs1.hubspotusercontent-na1.net/hubfs/369237/How-to-find-influencers-on-TikTok-for-your-marketing-campaign-1920x1080.jpg");
   height: 30vh;
