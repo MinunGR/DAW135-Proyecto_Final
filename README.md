@@ -16,7 +16,7 @@ Se ha diseñado el sitio web para la temática "Agencia de marketing de influenc
 - Visual Studio Code
 
 ## :heavy_check_mark:Requisitos:
-- Abrir en: <a href="https://marketing-de-influencers.onrender.com/"/>
+- Abrir en: **https://marketing-de-influencers.onrender.com/**
 
 ## :speech_balloon:Correo Utilizado para formulario:
 - **Correo** daw135.marketing@gmail.com
