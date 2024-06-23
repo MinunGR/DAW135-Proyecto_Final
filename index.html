@@ -43,6 +43,78 @@
 			<!-- Slider: Código ingresado usando Javascript -->
 
 		</section>
+		<section class="general_section" id="sec_marcas">
+			<div class="container_marcas">
+				<div class="columns is-desktop">
+					<div class="txt-box column">
+						<h2 class="has-text-white is-size-6">
+							<strong>
+								<span class="is-size-2-mobile is-size-2-desktop has-text-info">
+									Conectamos Influencias, Amplificamos Marcas
+								</span>
+							</strong>
+						</h2>
+						<p class="has-text-white is-size-4-mobile is-size-4-desktop">NombreDeLaEmpresa es el lider nacional en la transformación
+							social y comercial </p>
+					</div>
+					<img class="column imagen-prin level is-size-4-mobile" src="src/assets/images/inicio_marcas/celular.png" alt="celular">
+				</div>
+			</div>
+
+
+<!--slider de marcas-->
+			<div>
+				<h1 class="has-text-white txt-slider is-size-2-desktop">Marcas que prosperan con nuestro apoyo</h1>
+			</div>
+			<div class="container-slide">
+				<div class="slide-track">
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca1.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca2.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca3.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca4.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca5.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca6.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca7.png" alt="">
+					</div>
+
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca1.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca2.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca3.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca4.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca5.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca6.png" alt="">
+					</div>
+					<div class="slide-img">
+						<img src="src/assets/images/inicio_marcas/marca7.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="general_section" id="sec_nosotros">
 			<div class="container_about">
 				<div class="parallax">
@@ -189,7 +261,65 @@
 				</p>
 			</div>
 		</section>
-		<section class="general_section" id="sec_contactos"></section>
+		<section class="general_section" id="sec_contactos">
+			<div class="container">
+				<div class="columns is-desktop">
+					<div class="mensaje-form column">
+						<strong>
+							<h1 class="has-text-white is-size-2-desktop">Haz que tu marca <span class="has-text-info is-size-2-desktop">triunfe</span>, contáctanos</h1>
+						</strong>
+					</div>
+
+					<div class="formulario-box column">
+						<form id="form">
+							<!--Nombre-->
+							<div class="field">
+								<label class="label has-text-white">Nombre</label>
+								<div class="control">
+									<input class="input" type="text" name="nombre" placeholder="Nombre completo" required>
+								</div>
+							</div>
+			
+							<!--Email-->
+							<div class="field">
+								<label class="label has-text-white">Email</label>
+								<div class="control has-icons-left has-icons-right">
+									<input class="input is-medium" name="email" type="email" placeholder="introduce tu Email" required>
+									<span class="icon is-medium is-left">
+										<i class="fas fa-envelope"></i>
+									</span>
+									<span class="icon is-medium is-right">
+										<i class="fas fa-check"></i>
+									</span>
+								</div>
+							</div>
+			
+							<!--Select-->
+							<div class="control">
+								<label class="label has-text-white">¿Qué necesitas?</label>
+								<div class="select">
+									<select name="seleccion">
+										<option value="web">Desarrollo web ó E-Commerce</option>
+										<option value="marketing">Servicio de Agencia de Marketing Digital 360</option>
+										<option value="redes">Redes Sociales y Marcas Personales</option>
+										<option value="asesoria">Quiero Asesoria</option>
+									</select>
+								</div>
+							</div>
+			
+							<!--TextArea-->
+							<label class="label has-text-white">Mensaje</label>
+							<textarea class="textarea" name="mensaje" placeholder="Cuentanos sobre tu necesidad" required></textarea>
+			
+							<!--Botón-->
+							<input type="submit" id="button" class="button button_submit is-danger is-rounded" value="Enviar Mensaje" >
+			
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
 		<div class="curved upper">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
 				<path fill="#0a0a0a" fill-opacity="1"
@@ -311,6 +441,10 @@
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">emailjs.init('xDiXvTSiUJ3axagiP')</script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 	<script src="https://kit.fontawesome.com/c726452791.js" crossorigin="anonymous"></script>

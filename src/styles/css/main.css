@@ -438,4 +438,42 @@ nav .icon-burger .line {
   background: #2027f1;
 }
 
+/*inicio*/
+
+.container_marcas{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 150px auto
+
+}
+
+.txt-box{
+  padding-left: 50px;
+  margin-right: 350px;
+  font-family: sans-serif;
+}
+    
+
+.imagen-prin{
+  width: 350px;
+  height: 350px;
+  margin-right: 50px;
+  float: right
+}
+
+.imagen-prin{
+  width: 400px;
+  height: 350px;
+  margin-right: 50px;
+  float: right
+}
+    
+.txt-slider{
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
 /*# sourceMappingURL=main.css.map */
