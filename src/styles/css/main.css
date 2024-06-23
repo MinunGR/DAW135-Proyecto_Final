@@ -475,56 +475,5 @@ nav .icon-burger .line {
   font-family: sans-serif;
 }
 
-/* slide inicio */
-.container-slide{
-  width: 75vw;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-
-.container-slide .slide-track{
-  display: flex;
-  animation: scroll 40s linear infinite;
-  -webkit-animation: scroll 40s linear infinite;
-  width: calc(200px * 14);
-}
-
-.container-slide .slide-img {
-  width: 200px;
-}
-
-.container-slide .slide-img img {
-  width: 100%;
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-200px * 7));
-    transform: translateX(calc(-200px * 7));
-  }
-}
-
-/*  Formulario  */
-
-.mensaje-form{
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: sans-serif;
-  display: flex;
-  width: 50%;
-  padding: 30px;
-}
-
-.button{
-  margin-top: 10px;
-  margin-left: 200px;
-}
 
 /*# sourceMappingURL=main.css.map */
