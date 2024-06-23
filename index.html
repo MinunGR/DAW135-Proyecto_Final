@@ -13,6 +13,36 @@
 	<title>Name | Agencia de Marketing de Influencers</title>
 	<!--Icono de la compañia-->
 	<!--    <link rel="icon" href="src/img/icon.png" type="image/png" alt="NaI" />-->
+
+		<!-- Start of emailJS -->
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "6zqomQ00LWDP3JPdl",
+      });
+   })();
+
+   function sendEmail(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+    
+    const serviceID = 'service_pk493o6'; // Reemplaza con tu Service ID de EmailJS
+    const templateID = 'template_is3mywp'; // Reemplaza con tu Template ID de EmailJS
+
+    emailjs.sendForm(serviceID, templateID, event.target)
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Correo enviado con éxito!');
+        }, (error) => {
+            console.error('FAILED...', error);
+            alert('Hubo un error al enviar el correo.');
+        });
+}
+
+</script>
+	<!-- End of emailJS -->
 </head>
 
 <body>
@@ -42,44 +72,45 @@
 		<section class="general_section" id="sec_inicio">
 			<!-- Slider: Código ingresado usando Javascript -->
 
+		
 		</section>
-		<section class="general_section" id="sec_nosotros">
+		<section class="general_section about" id="sec_nosotros">
 			<div class="container_about">
 				<div class="parallax">
-				</div>
-				<div class="content">
-					<div class="content__square">
-						<div class="content__square__title">Mision</div>
-						<p>
-							Ser la agencia líder mundial en la gestión y
-							desarrollo de influencers, impulsando la
-							autenticidad, la creatividad y la conexión
-							genuina entre las marcas y sus audiencias a
-							través de contenido inspirador y de alto
-							impacto.
-						</p>
-					</div>
-					<div class="content__square">
-						<div class="content__square__title">Vision</div>
-						<p>
-							Nuestra misión es empoderar a los influencers
-							para que maximicen su potencial y alcancen el
-							éxito, proporcionando estrategias innovadoras,
-							recursos de primer nivel y apoyo integral.
-						</p>
-					</div>
-					<div class="content__square">
-						<div class="content__square__title">Objetivo</div>
-						<p>
-							Fortalecer la presencia digital de nuestros
-							influencers y marcas asociadas, logrando un
-							aumento del 25% en el engagement y el alcance en
-							redes sociales
-						</p>
+					<h1 class="titulo_parallax">"Acerca de Nosotros"</h1>
+					<div class="content">
+						<div class="content__square">
+							<div class="content__square__title">Mision</div>
+							<p class="content_square_texto">
+								Ser la agencia líder mundial en la gestión y
+								desarrollo de influencers, impulsando la
+								autenticidad, la creatividad y la conexión
+								genuina entre las marcas y sus audiencias a
+								través de contenido inspirador y de alto
+								impacto.
+							</p>
+						</div>
+						<div class="content__square">
+							<div class="content__square__title">Vision</div>
+							<p class="content_square_texto">
+								Nuestra misión es empoderar a los influencers
+								para que maximicen su potencial y alcancen el
+								éxito, proporcionando estrategias innovadoras,
+								recursos de primer nivel y apoyo integral.
+							</p>
+						</div>
+						<div class="content__square">
+							<div class="content__square__title">Objetivo</div>
+							<p class="content_square_texto">
+								Fortalecer la presencia digital de nuestros
+								influencers y marcas asociadas, logrando un
+								aumento del 25% en el engagement y el alcance en
+								redes sociales
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="parallax"></div>
 		</section>
 
 		<section class="general_section" id="sec_clientes">
@@ -189,6 +220,8 @@
 				</p>
 			</div>
 		</section>
+			</div>
+
 		<section class="general_section" id="sec_contactos"></section>
 		<div class="curved upper">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
@@ -197,7 +230,8 @@
 				</path>
 			</svg>
 		</div>
-	</main>
+			</main>
+
 
 	<footer class="footer has-text-white has-background-black" id="custom_footer">
 
@@ -264,22 +298,23 @@
 		</div>
 		<div class="colums is-desktop">
 			<div class="social_block">
-				<a href="#" target="_blank" class="has-text-link-light">
+				<a href="https://www.facebook.com/UESoficial.SV/?locale=es_LA" target="_blank" class="has-text-link-light">
 					<div class="social_block__icon">
 						<i class="fa-brands fa-facebook"></i>
 					</div>
 				</a>
-				<a href="#" class="has-text-link-light">
+				<a href="mailto:eg22009@ues.edu.sv" class="has-text-link-light" target="_blank">
+
 					<div class="social_block__icon">
 						<i class="fa-regular fa-envelope"></i>
 					</div>
 				</a>
-				<a href="#" class="has-text-link-light">
+				<a href="https://www.instagram.com/uesoficial/?hl=es" class="has-text-link-light" target="_blank">
 					<div class="social_block__icon">
 						<i class="fa-brands fa-instagram"></i>
 					</div>
 				</a>
-				<a href="#" class="has-text-link-light">
+				<a href="https://web.whatsapp.com/" class="has-text-link-light" target="_blank">
 					<div class="social_block__icon">
 						<i class="fa-brands fa-whatsapp"></i>
 					</div>
