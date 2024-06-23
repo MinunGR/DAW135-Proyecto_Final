@@ -244,47 +244,23 @@ body {
   font-weight: 500;
 }
 
+
 .parallax {
   background-image: url("https://369237.fs1.hubspotusercontent-na1.net/hubfs/369237/How-to-find-influencers-on-TikTok-for-your-marketing-campaign-1920x1080.jpg");
-  height: 30vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.content {
   height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-.content__square {
-  width: 300px;
-  border-radius: 25px;
-  padding: 20px;
-  background: white;
-  height: 350px;
-  font-size: 12px;
-  font-weight: bold;
-  color: black;
-}
-.content__square__title {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.parallax {
-  background-image: url("https://369237.fs1.hubspotusercontent-na1.net/hubfs/369237/How-to-find-influencers-on-TikTok-for-your-marketing-campaign-1920x1080.jpg");
-  height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
+}
+
+.titulo_parallax{
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 .parallax::before {
@@ -294,8 +270,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Añade un overlay oscuro */
+  background: rgba(0, 0, 0, 0.8); /* Añade un overlay oscuro */
   z-index: -1;
+}
+
+.about{
+  height: 100vh;
 }
 
 .content {
@@ -313,25 +293,27 @@ body {
   width: 300px;
   border-radius: 25px;
   padding: 20px;
-  background: white;
+  background: rgba(47, 4, 148, 0.9);
   height: auto;
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: gainsboro;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content__square__title {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 23px;
+  color:white;
+  font-weight: bold;
 }
 
 /* Responsive Styles */
 
 @media (max-width: 768px) {
   .parallax {
-    height: 30vh;
+    height: 100vh;
   }
 
   .content {
@@ -346,7 +328,10 @@ body {
 
 @media (max-width: 480px) {
   .parallax {
-    height: 20vh;
+    height: 1200px;
+  }
+  .about{
+    height: 1200px;
   }
 
   .content__square {
