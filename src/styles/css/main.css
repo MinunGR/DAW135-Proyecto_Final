@@ -108,6 +108,51 @@ body {
   height: 100%;
 }
 
+.container-slide {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.container-slide .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 2800px;
+}
+.container-slide .slide-img {
+  width: 200px;
+}
+.container-slide .slide-img img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1400px);
+    transform: translateX(-1400px);
+  }
+}
+.mensaje-form {
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  width: 50%;
+  padding: 30px;
+}
+
+.button_submit {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
 .social_block {
   margin: 20px 0px;
   display: flex;
@@ -297,6 +342,36 @@ body {
   background-color: #000;
 }
 
+.container_marcas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 150px auto;
+}
+
+.txt-box {
+  padding-left: 50px;
+  margin-right: 350px;
+  font-family: sans-serif;
+}
+
+.imagen-prin {
+  width: 350px;
+  height: 350px;
+  margin-right: 50px;
+  float: right;
+  width: 400px;
+  height: 350px;
+  margin-right: 50px;
+  float: right;
+}
+
+.txt-slider {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
 nav {
   position: fixed;
   z-index: 20;
@@ -437,43 +512,5 @@ nav .icon-burger .line {
   width: 15%;
   background: #2027f1;
 }
-
-/*inicio*/
-
-.container_marcas{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 150px auto
-
-}
-
-.txt-box{
-  padding-left: 50px;
-  margin-right: 350px;
-  font-family: sans-serif;
-}
-    
-
-.imagen-prin{
-  width: 350px;
-  height: 350px;
-  margin-right: 50px;
-  float: right
-}
-
-.imagen-prin{
-  width: 400px;
-  height: 350px;
-  margin-right: 50px;
-  float: right
-}
-    
-.txt-slider{
-  text-align: center;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-
 
 /*# sourceMappingURL=main.css.map */
