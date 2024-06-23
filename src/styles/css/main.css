@@ -188,6 +188,14 @@ body {
 
 .equipo-wrapper {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.equipo-wrapper {
+		flex-direction: column;
+	}
 }
 
 .team-member {
