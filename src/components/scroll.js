@@ -1,33 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Añadimos scroll por secciones
-    document.getElementById('inicio').addEventListener('click', function () {
-        scrollToSection('sec_inicio', -100);
-    });
 
-    document.getElementById('nosotros').addEventListener('click', function () {
-        scrollToSection('sec_nosotros', -100);
-    });
-
-    document.getElementById('clientes').addEventListener('click', function () {
-        scrollToSection('sec_clientes', -130);
-    });
-
-    document.getElementById('equipo').addEventListener('click', function () {
-        scrollToSection('sec_equipo', -100);
-    });
-
-    document.getElementById('contactos').addEventListener('click', function () {
-        scrollToSection('sec_contactos', -100);
-    });
-
+//Añadimos scroll por secciones
+$("#inicio").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#sec_inicio").offset().top - 100
+    }, 1000);
 });
-
-// Función para hacer scroll a una sección
-function scrollToSection(sectionId, offset) {
-    const section = document.getElementById(sectionId);
-    const top = section.offsetTop + offset;
-    window.scrollTo({
-        top: top,
-        behavior: 'smooth'
-    });
-}
+$("#nosotros").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#sec_nosotros").offset().top - 100
+    }, 1000);
+});
+$("#clientes").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#sec_clientes").offset().top - 130
+    }, 1000);
+});
+$("#equipo").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#sec_equipo").offset().top - 130
+    }, 1000);
+});
+$("#contactos").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#sec_contactos").offset().top - 100
+    }, 1000);
+});
