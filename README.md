@@ -36,7 +36,4 @@ Se ha diseñado el sitio web para la temática "Agencia de marketing de influenc
 
   
 | [<img src="https://avatars.githubusercontent.com/u/61745150?v=4" width=115><br><sub>Fernando José Barraza Álvarez</sub>](https://github.com/MinunGR) | [<img src="https://avatars.githubusercontent.com/u/57274941?v=4" width=115><br><sub>David Salomón Martínez Valladares</sub>](https://github.com/DavidSalomonDev) | [<img src="https://avatars.githubusercontent.com/u/145523801?v=4" width=115><br><sub>Carlos Guillermo Ortiz Abarca</sub>](https://github.com/Carlos-Otz)| [<img src="https://avatars.githubusercontent.com/u/72239850?v=4" width=115><br><sub>Josue Natanael Erazo García</sub>](https://github.com/josueerazo) | [<img src="https://avatars.githubusercontent.com/u/135405797?v=4" width=115><br><sub>Salvador Enrique Quezada Campos</sub>](https://github.com/kike688)
-
 | :---: | :---: | :---: | :---: | :---: 
-
-:3
